@@ -4,12 +4,13 @@ public class WebBrowser {
 
     private int counter;
 
-    public void loadImage(String image) {
-        downloadImage(image);
+    public Image loadImage(String imageUrl) {
+        return downloadImage(imageUrl);
     }
 
-    private void downloadImage(String image) {
+    private Image downloadImage(String imageUrl) {
         counter++;
+        return new Image(imageUrl);
     }
 
     public int getDownloadCount() {
