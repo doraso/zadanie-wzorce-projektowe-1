@@ -7,7 +7,7 @@ public class FinanceManager {
     private Logger logger;
 
     public FinanceManager() {
-        logger = new Logger("log.txt");
+        logger = new Logger();
     }
 
     public void doFinanceStuff() {

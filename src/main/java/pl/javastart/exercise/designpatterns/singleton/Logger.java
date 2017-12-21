@@ -12,8 +12,8 @@ public class Logger {
 
     private File file;
 
-    public Logger(String filename) {
-        file = new File(filename);
+    public Logger() {
+        file = new File("log.txt");
         if(file.exists()) {
             file.delete();
         }

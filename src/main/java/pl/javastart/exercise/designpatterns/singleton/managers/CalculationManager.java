@@ -7,7 +7,7 @@ public class CalculationManager {
     private Logger logger;
 
     public CalculationManager() {
-        logger = new Logger("log.txt");
+        logger = new Logger();
     }
 
     public void doImportantCalculations() {
